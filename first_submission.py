@@ -10,7 +10,7 @@ test_df = pd.read_csv("titanic_data/test.csv")
 
 # Préparation des données
 y = df["Survived"]
-features = ["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]
+features = ["Pclass", "Sex", "SibSp", "Parch"]
 X = pd.get_dummies(df[features])
 X_test = pd.get_dummies(test_df[features])
 
